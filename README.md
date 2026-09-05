@@ -31,7 +31,7 @@ Sections with no content yet hide themselves rather than showing an empty shell,
 
 1. **Set the RSVP link.** Create a Google Form (or Formspree), then paste its link into `rsvp.formUrl` in `src/content.js`. Until it's set, the RSVP section shows a holding message instead of a button.
 2. **Fill in the ceremony times.** Each ceremony has an empty `time` field that stays hidden until set. The muhurtha time matters most, since guests book travel around it.
-3. **If you move to a custom domain,** update the absolute URLs in `index.html` (canonical, `og:url`, `og:image`, `twitter:image`) and set `BASE_PATH` to `/` in `.github/workflows/deploy.yml`, since social previews (WhatsApp especially) need absolute URLs for the share image.
+3. **If the domain ever changes,** update `public/CNAME`, the Pages setting, and the absolute URLs in `index.html` (canonical, `og:url`, `og:image`, `twitter:image`), since social previews (WhatsApp especially) need absolute URLs for the share image.
 
 ## Deploy
 

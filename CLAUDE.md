@@ -47,8 +47,8 @@ Images are served from `public/invites/` and referenced by absolute path (e.g. `
 
 ## Social preview
 
-`index.html` carries Open Graph and Twitter card tags with absolute URLs pointing at the live site, `https://varunmeds.github.io/wedding/`. If the site moves to a custom domain, update them, since WhatsApp and most scrapers ignore relative `og:image` URLs.
+`index.html` carries Open Graph and Twitter card tags with absolute URLs pointing at the live site, `https://tanviandvarun.com/`. If the domain ever changes, update them, since WhatsApp and most scrapers ignore relative `og:image` URLs.
 
 ## Deployment
 
-The site is published with GitHub Pages from the public repo `varunmeds/wedding`. A push to `main` runs `.github/workflows/deploy.yml`, which builds with `BASE_PATH=/wedding/` and deploys `dist/`. Root-relative asset paths in JSX and `content.js` go through `src/assetUrl.js` so they resolve under that sub-path; `npm run dev` still serves from `/`. `public/prompt_images/` is gitignored and never deployed.
+The site is published with GitHub Pages from the public repo `varunmeds/wedding`. A push to `main` runs `.github/workflows/deploy.yml`, which builds with `BASE_PATH=/` and deploys `dist/` to the custom domain `tanviandvarun.com` (set in the Pages settings and in `public/CNAME`). Root-relative asset paths in JSX and `content.js` go through `src/assetUrl.js`, so the site would also work from a sub-path if it ever had to. `public/prompt_images/` is gitignored and never deployed.
