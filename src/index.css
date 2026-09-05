@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-sans: "Jost", ui-sans-serif, system-ui, sans-serif;
+
+  /* Botanical / hibiscus-inspired palette */
+  --color-cream: #faf6f0;
+  --color-blush: #f3e4de;
+  --color-clay: #b9705f;
+  --color-terracotta: #a1503f;
+  --color-leaf: #6b7a5e;
+  /* Phthalo green: the deep blue-green of wet coffee leaves. Used for
+     the footer, the RSVP button, and small accents. */
+  --color-phthalo: #123524;
+  --color-ink: #3a322e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* The nav is fixed, so anchor jumps would otherwise land a section's
+   heading underneath it. */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal,
+  .reveal.is-visible {
+    opacity: 1;
+    animation: none;
+  }
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Fade-in on scroll */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.reveal.is-visible {
+  animation: fade-up 0.9s ease forwards;
+}
+
+/* Slim scrollbar for the "Where to Stay" card rail; the default one is
+   heavy against the dark section. */
+.stay-rail {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(255 255 255 / 0.25) transparent;
+}
+
+.stay-rail::-webkit-scrollbar {
+  height: 6px;
+}
+
+.stay-rail::-webkit-scrollbar-track {
+  background: rgb(255 255 255 / 0.06);
+  border-radius: 999px;
+}
+
+.stay-rail::-webkit-scrollbar-thumb {
+  background: rgb(255 255 255 / 0.25);
+  border-radius: 999px;
+}
+
+.stay-rail::-webkit-scrollbar-thumb:hover {
+  background: rgb(255 255 255 / 0.4);
+}

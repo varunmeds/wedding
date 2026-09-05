@@ -1,0 +1,7 @@
+node_modules
+dist
+.DS_Store
+*.local
+.claude
+# Generated candidates that were rejected; not part of the site.
+public/prompt_images
