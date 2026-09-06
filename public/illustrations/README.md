@@ -7,7 +7,7 @@ exists, its slot on the site simply stays empty (no broken image).
 | ------------------- | -------------------------- |
 | `oorkuduva.png`     | Oorkuduva ceremony card    |
 | `muhurtha.png`      | Muhurtha ceremony card     |
-| `ganga-pooje.png`   | Ganga Pooje ceremony card  |
+| `ganga-pooje.png`   | Ganga Pooja ceremony card  |
 
 **Tips for best results**
 

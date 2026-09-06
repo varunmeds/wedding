@@ -36,7 +36,7 @@ export const ceremonies = {
       time: '', // e.g. '6:00 pm'; hidden while empty
       image: '/illustrations/oorkuduva.png',
       intro:
-        'The gathering, when family and friends traditionally come together to set up the wedding. The evening opens with a prayer as the sacred lamp is lit, and we take our parents’ blessings. The bride’s mother then puts on her a coral necklace and the pathak, the Kodava equivalent of a mangalsutra. After that: drums, folk dances and a hearty Kodava dinner, so come ready to eat, dance and celebrate with us.',
+        'The gathering, when family and friends traditionally come together to set up the wedding. The evening opens with a prayer as the sacred lamp is lit, and we take our parents’ blessings. After that the celebrations begin, so come ready to eat a hearty Kodava dinner, dance and celebrate with us.',
       attire: {
         men: 'Suits',
         women: 'Indo-western or evening wear',
@@ -50,21 +50,21 @@ export const ceremonies = {
       time: '',
       image: '/illustrations/muhurtha.png',
       intro:
-        'The wedding, held at the auspicious hour. The morning begins with the cutting of banana stems at the entrance, a show of each family’s strength, before we are escorted to the stage by our best man and maid of honour. There we circle the three-legged stool, exchange garlands, and the elders of both families hold the formal dialogue that seals the marriage. Then the blessings: parents first, then relatives, then every guest, so please arrive on time and come up when it is your turn.',
+        'The wedding, held at the auspicious hour. The morning begins with the cutting of banana stems at the entrance, a show of each family’s strength, before we are escorted to the stage by our best man and maid of honour. There the elders of both families hold the formal dialogue that seals the marriage. Then the blessings: parents first, then relatives, then every guest.',
       attire: {
         men: 'Indian wear',
         women: 'Indian wear',
       },
     },
     {
-      kodavaName: 'Ganga Pooje',
+      kodavaName: 'Ganga Pooja',
       link: 'https://kodavaclan.com/kodaguheritage/mangala-padathi/#Neer_Edpo_Ganga_Pooje',
       day: 'Sunday, 20th December',
       when: 'Afternoon',
       time: '',
       image: '/illustrations/ganga-pooje.png',
       intro:
-        'The water ceremony, which welcomes the bride into her new home and closes the celebrations. After lunch the groom’s mother leads her to the well, where she offers a prayer, breaks a coconut with the groom’s dagger and draws water into small pots. She then carries them home on her head while the groom’s family playfully blocks her way, dancing to the music. It’s a lovely, gentle end to the two days, and you are warmly welcome to stay and watch.',
+        'The water ceremony, which closes the celebrations. After lunch the bride draws water from the well and carries it home on her head, while the groom’s family playfully blocks her way, dancing to the music. It is really a party: the music and dancing carry on well into the evening, and the drinks flow. You are warmly welcome to stay, dance and have a good time with us.',
       attire: {
         men: 'Indian wear, same as the morning',
         women: 'Indian wear, same as the morning',
