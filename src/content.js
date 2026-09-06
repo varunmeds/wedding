@@ -23,25 +23,38 @@ export const couple = {
 export const ceremonies = {
   heading: 'The Ceremonies',
   intro:
-    'Ours is a Kodava wedding: a celebration led by the elders of our families, steeped in the traditions of Coorg. We would be honoured to have you with us for each of the three ceremonies.',
+    'Ours is a Kodava wedding: there is no priest. Prayers are offered to our ancestors at the sacred lamp, and the ceremonies are guided by the elders of our families, whose blessings we seek. Here is what happens over the two days, and where you come in.',
+  // Each card shows `intro`, then `steps` in order, then the `attire` box.
+  // Custom names are given in plain English; the card title links to a
+  // fuller Kodagu heritage write-up for the curious.
   events: [
     {
       kodavaName: 'Oorkuduva',
-      // Wikipedia has no Kodava-specific articles for these rites, so the
-      // names deep-link to sections of a Kodagu heritage write-up instead.
       link: 'https://kodavaclan.com/kodaguheritage/mangala-padathi/#Ooor_Kuduvo',
       day: 'Saturday, 19th December',
       when: 'Evening',
-      // TODO: replace with the actual start time, e.g. '4:00 pm onwards'.
-      // Leave as an empty string to hide the line entirely.
       time: '', // e.g. '6:00 pm'; hidden while empty
-      // Drop a transparent PNG here (see README in public/illustrations).
       image: '/illustrations/oorkuduva.png',
-      // Not shown on the site at the moment; the card shows `forGuests`.
-      detail:
-        'The celebrations open as our families, relatives and friends come together at the venue. In Kodava tradition there is no priest. Our elders lead the way, and we begin by seeking the blessings of our parents, elders and ancestors.',
-      forGuests:
-        'A warm, relaxed evening of drums, folk music and traditional dance, Ummathat by the women and Kolaat by the men, followed by a hearty Kodava feast. Simply come ready to eat, dance and celebrate with us.',
+      intro:
+        'The gathering. Traditionally the day the village, relatives and well-wishers come together to set up the wedding. For us, it is the welcome evening.',
+      steps: [
+        {
+          title: 'Lighting the lamp',
+          text: 'The evening opens with a simple prayer to the goddess Kaveri and Lord Iguthappa as the traditional oil lamp is lit.',
+        },
+        {
+          title: 'Blessings at the lamp',
+          text: 'Each of us is led to the lamp by our best man and maid of honour, and we take our parents’ blessings, touching their feet three times.',
+        },
+        {
+          title: 'The bride’s coral chain',
+          text: 'The bride’s mother puts on her a coral necklace and the pathak, the Kodava equivalent of a mangalsutra.',
+        },
+        {
+          title: 'Music, dance and a feast',
+          text: 'Then the fun: drums and folk music, the women’s and men’s traditional dances, and a hearty Kodava dinner. Come ready to eat, dance and celebrate with us.',
+        },
+      ],
       attire: {
         men: 'Suits',
         women: 'Indo-western or evening wear',
@@ -52,14 +65,36 @@ export const ceremonies = {
       link: 'https://kodavaclan.com/kodaguheritage/mangala-padathi/#Dampathi_Muhurtha',
       day: 'Sunday, 20th December',
       when: 'Morning',
-      // TODO: the muhurtha time matters most; guests book travel around it.
       time: '',
       image: '/illustrations/muhurtha.png',
-      // Not shown on the site at the moment; the card shows `forGuests`.
-      detail:
-        'The heart of the celebration, held at the auspicious hour. Once again there is no priest: our elders solemnise the union, the couple are blessed by married elders of both families, and we are welcomed into each other’s okka (family). The rituals are simple and deeply personal, centred on family blessings rather than religious rites.',
-      forGuests:
-        'This is the moment to arrive on time for. Seating begins shortly before the muhurtha. We’ll be in traditional Kodava dress; you’re warmly invited to be seated and share in the blessings.',
+      intro:
+        'The wedding, held at the auspicious hour. Please arrive on time: seating begins shortly before the muhurtha, and the blessings are the part we most want you there for.',
+      steps: [
+        {
+          title: 'Getting ready',
+          text: 'At dawn, the bangle ceremony: married women slip glass bangles onto the bride’s wrists, while the groom is shaved and bathed by his family. She dresses in a red silk sari; he in the white kupya, red-and-gold sash, dagger and turban.',
+        },
+        {
+          title: 'Cutting the banana stems',
+          text: 'At the entrance, an uncle from each family circles a row of banana stems three times and fells each with a single stroke of the sword, then dances a jig to the band. A show of the family’s strength and good cheer.',
+        },
+        {
+          title: 'The procession',
+          text: 'The groom is escorted to the stage by his best man, two girls carrying lamps, and the musicians. The bride follows with her maid of honour.',
+        },
+        {
+          title: 'At the stage',
+          text: 'We sprinkle rice at the sacred lamp, circle the three-legged stool three times and take our seats. Garlands are exchanged, and the elders of both families hold the formal dialogue that seals the marriage.',
+        },
+        {
+          title: 'Your blessings',
+          text: 'Parents first, then relatives, then every guest in turn: rice sprinkled over the couple, a sip of milk, and a small red bag of coins for prosperity. This is where you come up and bless us.',
+        },
+        {
+          title: 'Barring the bride',
+          text: 'A playful custom to finish: the bride’s cousin, who by old custom had first claim to marry her, blocks her way. After much theatrical haggling he settles for a gold coin and sends her off as a beloved sister.',
+        },
+      ],
       attire: {
         men: 'Indian wear',
         women: 'Indian wear',
@@ -70,14 +105,24 @@ export const ceremonies = {
       link: 'https://kodavaclan.com/kodaguheritage/mangala-padathi/#Neer_Edpo_Ganga_Pooje',
       day: 'Sunday, 20th December',
       when: 'Afternoon',
-      // TODO: replace with the actual time.
-      time: '', // e.g. '6:00 pm'; hidden while empty
+      time: '',
       image: '/illustrations/ganga-pooje.png',
-      // Not shown on the site at the moment; the card shows `forGuests`.
-      detail:
-        'A ritual found only in Kodava weddings. The newlyweds walk together to a well to draw water, offering prayers to Kaveri, the river goddess born in Coorg and revered as the giver of life to this land. It marks the bride stepping into her new home and gently closes the celebrations.',
-      forGuests:
-        'An intimate ceremony you are warmly welcome to join and watch. It’s a lovely, gentle end to the two days before we say our goodbyes.',
+      intro:
+        'The water ceremony. After lunch, the ritual that welcomes the bride into her new home, and the gentle close of the two days. You are warmly welcome to stay and watch.',
+      steps: [
+        {
+          title: 'To the well',
+          text: 'The groom’s mother leads the bride to the well. She sprinkles rice, offers a prayer to Kaveri, the river goddess of Coorg, breaks a coconut with the groom’s dagger and draws water into small pots.',
+        },
+        {
+          title: 'Carrying the water',
+          text: 'With the pots stacked on her head and two girls from the groom’s family beside her, she walks to the house, while the groom’s family playfully blocks her way, dancing to the music. Small, deliberate steps and plenty of laughter.',
+        },
+        {
+          title: 'Home',
+          text: 'At the hall she sprinkles rice on the lamps and receives the elders’ blessings. It marks the start of her life in her new home, and the end of the celebrations before we say our goodbyes.',
+        },
+      ],
       attire: {
         men: 'Indian wear, same as the morning',
         women: 'Indian wear, same as the morning',

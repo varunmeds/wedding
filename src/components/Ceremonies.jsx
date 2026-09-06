@@ -149,13 +149,35 @@ export default function Ceremonies() {
                   )}
                 </div>
 
-                {/* Guest note. The longer `detail` copy in content.js is
-                    kept for reference but not shown. */}
+                {/* What happens: a short intro, then the steps in order. */}
                 <div className="border-cream/15 sm:col-start-2 sm:row-start-1 sm:border-l sm:pl-8 lg:col-start-1 lg:row-start-2 lg:border-l-0 lg:border-t lg:pl-0 lg:pt-6">
-                  {event.forGuests && (
-                    <p className="leading-relaxed text-cream/90">
-                      {event.forGuests}
-                    </p>
+                  {event.intro && (
+                    <p className="leading-relaxed text-cream/90">{event.intro}</p>
+                  )}
+                  {event.steps?.length > 0 && (
+                    <ol className="mt-5 space-y-4">
+                      {event.steps.map((step, k) => (
+                        <li key={k} className="flex gap-3">
+                          <span
+                            className="mt-0.5 shrink-0 font-serif text-lg leading-none text-clay"
+                            aria-hidden="true"
+                          >
+                            {k + 1}.
+                          </span>
+                          <div>
+                            <p className="text-sm uppercase tracking-widest text-blush/90">
+                              {step.title}
+                            </p>
+                            <p className="mt-1 leading-relaxed text-cream/85">
+                              {step.text}
+                            </p>
+                          </div>
+                        </li>
+                      ))}
+                    </ol>
+                  )}
+                  {!event.steps?.length && event.forGuests && (
+                    <p className="leading-relaxed text-cream/90">{event.forGuests}</p>
                   )}
                 </div>
 
