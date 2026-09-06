@@ -64,7 +64,7 @@ export const ceremonies = {
       time: '',
       image: '/illustrations/ganga-pooje.png',
       intro:
-        'The water ceremony, which closes the celebrations. After lunch the bride draws water from the well and carries it home on her head, while the groom’s family playfully blocks her way, dancing to the music. It is really a party: the music and dancing carry on well into the evening, and the drinks flow. You are warmly welcome to stay, dance and have a good time with us.',
+        'The water ceremony, which closes the celebrations. After lunch the bride draws water from the well and carries it back to the hall, while the groom’s family playfully blocks her way, dancing to the music. It is really a party: the music and dancing carry on well into the evening, and the drinks flow. You are warmly welcome to stay, dance and have a good time with us.',
       attire: {
         men: 'Indian wear, same as the morning',
         women: 'Indian wear, same as the morning',
