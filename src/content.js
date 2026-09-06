@@ -24,9 +24,9 @@ export const ceremonies = {
   heading: 'The Ceremonies',
   intro:
     'Ours is a Kodava wedding: a celebration led by the elders of our families, steeped in the traditions of Coorg. We would be honoured to have you with us for each of the three ceremonies.',
-  // Each card shows `intro`, then `steps` in order, then the `attire` box.
-  // Custom names are given in plain English; the card title links to a
-  // fuller Kodagu heritage write-up for the curious.
+  // Each card shows `intro` (a few sentences, customs named in plain
+  // English) and the `attire` box. The card title links to a fuller Kodagu
+  // heritage write-up for the curious.
   events: [
     {
       kodavaName: 'Oorkuduva',
@@ -36,25 +36,7 @@ export const ceremonies = {
       time: '', // e.g. '6:00 pm'; hidden while empty
       image: '/illustrations/oorkuduva.png',
       intro:
-        'The gathering. Traditionally the day the village, relatives and well-wishers come together to set up the wedding. For us, it is the welcome evening.',
-      steps: [
-        {
-          title: 'Lighting the lamp',
-          text: 'The evening opens with a simple prayer to the goddess Kaveri and Lord Iguthappa as the traditional oil lamp is lit.',
-        },
-        {
-          title: 'Blessings at the lamp',
-          text: 'Each of us is led to the lamp by our best man and maid of honour, and we take our parents’ blessings, touching their feet three times.',
-        },
-        {
-          title: 'The bride’s coral chain',
-          text: 'The bride’s mother puts on her a coral necklace and the pathak, the Kodava equivalent of a mangalsutra.',
-        },
-        {
-          title: 'Music, dance and a feast',
-          text: 'Then the fun: drums and folk music, the women’s and men’s traditional dances, and a hearty Kodava dinner. Come ready to eat, dance and celebrate with us.',
-        },
-      ],
+        'The gathering, when family and friends traditionally come together to set up the wedding. The evening opens with a prayer as the sacred lamp is lit, and we take our parents’ blessings. The bride’s mother then puts on her a coral necklace and the pathak, the Kodava equivalent of a mangalsutra. After that: drums, folk dances and a hearty Kodava dinner, so come ready to eat, dance and celebrate with us.',
       attire: {
         men: 'Suits',
         women: 'Indo-western or evening wear',
@@ -68,33 +50,7 @@ export const ceremonies = {
       time: '',
       image: '/illustrations/muhurtha.png',
       intro:
-        'The wedding, held at the auspicious hour. Please arrive on time: seating begins shortly before the muhurtha, and the blessings are the part we most want you there for.',
-      steps: [
-        {
-          title: 'Getting ready',
-          text: 'At dawn, the bangle ceremony: married women slip glass bangles onto the bride’s wrists, while the groom is shaved and bathed by his family. She dresses in a red silk sari; he in the white kupya, red-and-gold sash, dagger and turban.',
-        },
-        {
-          title: 'Cutting the banana stems',
-          text: 'At the entrance, an uncle from each family circles a row of banana stems three times and fells each with a single stroke of the sword, then dances a jig to the band. A show of the family’s strength and good cheer.',
-        },
-        {
-          title: 'The procession',
-          text: 'The groom is escorted to the stage by his best man, two girls carrying lamps, and the musicians. The bride follows with her maid of honour.',
-        },
-        {
-          title: 'At the stage',
-          text: 'We sprinkle rice at the sacred lamp, circle the three-legged stool three times and take our seats. Garlands are exchanged, and the elders of both families hold the formal dialogue that seals the marriage.',
-        },
-        {
-          title: 'Your blessings',
-          text: 'Parents first, then relatives, then every guest in turn: rice sprinkled over the couple, a sip of milk, and a small red bag of coins for prosperity. This is where you come up and bless us.',
-        },
-        {
-          title: 'Barring the bride',
-          text: 'A playful custom to finish: the bride’s cousin, who by old custom had first claim to marry her, blocks her way. After much theatrical haggling he settles for a gold coin and sends her off as a beloved sister.',
-        },
-      ],
+        'The wedding, held at the auspicious hour. The morning begins with the cutting of banana stems at the entrance, a show of each family’s strength, before we are escorted to the stage by our best man and maid of honour. There we circle the three-legged stool, exchange garlands, and the elders of both families hold the formal dialogue that seals the marriage. Then the blessings: parents first, then relatives, then every guest, so please arrive on time and come up when it is your turn.',
       attire: {
         men: 'Indian wear',
         women: 'Indian wear',
@@ -108,21 +64,7 @@ export const ceremonies = {
       time: '',
       image: '/illustrations/ganga-pooje.png',
       intro:
-        'The water ceremony. After lunch, the ritual that welcomes the bride into her new home, and the gentle close of the two days. You are warmly welcome to stay and watch.',
-      steps: [
-        {
-          title: 'To the well',
-          text: 'The groom’s mother leads the bride to the well. She sprinkles rice, offers a prayer to Kaveri, the river goddess of Coorg, breaks a coconut with the groom’s dagger and draws water into small pots.',
-        },
-        {
-          title: 'Carrying the water',
-          text: 'With the pots stacked on her head and two girls from the groom’s family beside her, she walks to the house, while the groom’s family playfully blocks her way, dancing to the music. Small, deliberate steps and plenty of laughter.',
-        },
-        {
-          title: 'Home',
-          text: 'At the hall she sprinkles rice on the lamps and receives the elders’ blessings. It marks the start of her life in her new home, and the end of the celebrations before we say our goodbyes.',
-        },
-      ],
+        'The water ceremony, which welcomes the bride into her new home and closes the celebrations. After lunch the groom’s mother leads her to the well, where she offers a prayer, breaks a coconut with the groom’s dagger and draws water into small pots. She then carries them home on her head while the groom’s family playfully blocks her way, dancing to the music. It’s a lovely, gentle end to the two days, and you are warmly welcome to stay and watch.',
       attire: {
         men: 'Indian wear, same as the morning',
         women: 'Indian wear, same as the morning',
