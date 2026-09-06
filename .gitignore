@@ -5,3 +5,7 @@ dist
 .claude
 # Generated candidates that were rejected; not part of the site.
 public/prompt_images
+
+# Personal files that live next to the project but are not part of the site.
+*.pdf
+!public/**/*.pdf

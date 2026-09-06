@@ -43,8 +43,8 @@ export const ceremonies = {
       forGuests:
         'A warm, relaxed evening of drums, folk music and traditional dance, Ummathat by the women and Kolaat by the men, followed by a hearty Kodava feast. Simply come ready to eat, dance and celebrate with us.',
       attire: {
-        men: 'Suits, or a jacket and trousers. The evening turns chilly, so the jacket earns its keep.',
-        women: 'Evening dresses, gowns or Indian festive wear in bright colours. A shawl or stole for after dark, and shoes you can dance in.',
+        men: 'Suits',
+        women: 'Indo-western or evening wear',
       },
     },
     {
@@ -61,8 +61,8 @@ export const ceremonies = {
       forGuests:
         'This is the moment to arrive on time for. Seating begins shortly before the muhurtha. We’ll be in traditional Kodava dress; you’re warmly invited to be seated and share in the blessings.',
       attire: {
-        men: 'Indian wear: kurta, bandhgala or sherwani. If you’d like to try the traditional Kupya Chele, we’d love that.',
-        women: 'Indian wear: sari, lehenga or salwar suit. The Kodava sari is warmly welcome if you’d like to wear one. Flats or grass-friendly shoes for the outdoor seating.',
+        men: 'Indian wear',
+        women: 'Indian wear',
       },
     },
     {
@@ -79,8 +79,8 @@ export const ceremonies = {
       forGuests:
         'An intimate ceremony you are warmly welcome to join and watch. It’s a lovely, gentle end to the two days before we say our goodbyes.',
       attire: {
-        men: 'The morning outfit is perfect, or a lighter kurta. Comfortable footwear for the short walk to the well.',
-        women: 'The morning outfit is perfect, or a lighter sari or salwar suit. Comfortable footwear for the short walk to the well.',
+        men: 'Indian wear, same as the morning',
+        women: 'Indian wear, same as the morning',
       },
     },
   ],
