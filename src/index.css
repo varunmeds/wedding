@@ -35,8 +35,7 @@ section[id] {
   .reveal.is-visible,
   .is-visible .stagger > *,
   .hero-in > *,
-  .heading-ornament,
-  .digit-in {
+  .heading-ornament {
     opacity: 1;
     transform: none;
     animation: none;
@@ -139,23 +138,6 @@ body {
 .hero-bg {
   animation: hero-drift 28s ease-in-out infinite alternate;
   will-change: transform;
-}
-
-/* Countdown digits slide up as they change. */
-@keyframes digit-in {
-  from {
-    opacity: 0;
-    transform: translateY(0.35em);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.digit-in {
-  display: inline-block;
-  animation: digit-in 0.45s ease-out;
 }
 
 /* Slim scrollbar for the "Where to Stay" card rail; the default one is

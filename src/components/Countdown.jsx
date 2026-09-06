@@ -20,9 +20,7 @@ function Unit({ value, label }) {
   return (
     <div className="flex flex-col items-center">
       <span className="font-serif text-4xl text-cream sm:text-6xl">
-        <span key={value} className="digit-in">
-          {String(value).padStart(2, '0')}
-        </span>
+        {String(value).padStart(2, '0')}
       </span>
       <span className="mt-1 text-xs uppercase tracking-[0.2em] text-cream/75">
         {label}
