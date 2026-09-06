@@ -50,7 +50,7 @@ export const ceremonies = {
       time: '',
       image: '/illustrations/muhurtha.png',
       intro:
-        'The wedding, held at the auspicious hour. The morning begins with the cutting of banana stems at the entrance, a show of each family’s strength, before we are escorted to the stage by our best man and maid of honour. There the elders of both families hold the formal dialogue that seals the marriage. Then the blessings: parents first, then relatives, then every guest.',
+        'The wedding, held at the auspicious hour. The morning begins with the cutting of banana stems at the entrance, before we are escorted to the stage by our best man and maid of honour. There the elders of both families hold the formal dialogue that seals the marriage, followed by blessings.',
       attire: {
         men: 'Indian wear',
         women: 'Indian wear',
@@ -64,7 +64,7 @@ export const ceremonies = {
       time: '',
       image: '/illustrations/ganga-pooje.png',
       intro:
-        'The water ceremony, which closes the celebrations. After lunch the bride draws water from the well and carries it back to the hall, while the groom’s family playfully blocks her way, dancing to the music. It is really a party: the music and dancing carry on well into the evening, and the drinks flow. You are warmly welcome to stay, dance and have a good time with us.',
+        'The water ceremony, which closes the celebrations. After lunch the bride draws water from the well and carries it back to the hall, while the groom’s family playfully blocks her way, dancing to the music. The music and dancing carry on well into the evening, and the drinks flow. You are warmly welcome to stay, dance and have a good time with us.',
       attire: {
         men: 'Indian wear, same as the morning',
         women: 'Indian wear, same as the morning',
