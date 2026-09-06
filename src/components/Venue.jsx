@@ -31,7 +31,7 @@ export default function Venue() {
           </div>
         )}
 
-        <div className="flex flex-col justify-center gap-6">
+        <div className="stagger flex flex-col justify-center gap-6">
           {venue.travel.map((item, i) => (
             <div
               key={i}

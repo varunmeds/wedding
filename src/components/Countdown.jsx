@@ -20,7 +20,9 @@ function Unit({ value, label }) {
   return (
     <div className="flex flex-col items-center">
       <span className="font-serif text-4xl text-cream sm:text-6xl">
-        {String(value).padStart(2, '0')}
+        <span key={value} className="digit-in">
+          {String(value).padStart(2, '0')}
+        </span>
       </span>
       <span className="mt-1 text-xs uppercase tracking-[0.2em] text-cream/75">
         {label}
@@ -51,7 +53,7 @@ export default function Countdown() {
             <p className="text-sm uppercase tracking-[0.3em] text-blush">
               Counting down to our day
             </p>
-            <HeadingOrnament className="mx-auto mb-8 mt-4 h-6 w-40 text-cream/60" />
+            <HeadingOrnament className="heading-ornament mx-auto mb-8 mt-4 h-6 w-40 text-cream/60" />
             {/* The ticking digits are decorative; announcing them every
                 second would flood a screen reader, so the readable form
                 is a single sentence beside them. */}

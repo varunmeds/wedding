@@ -35,7 +35,7 @@ export default function Nav() {
             <li key={item.id}>
               <a
                 href={`#${item.id}`}
-                className={`text-sm uppercase tracking-widest transition-colors hover:text-clay ${
+                className={`relative text-sm uppercase tracking-widest transition-colors after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-300 hover:text-clay hover:after:scale-x-100 ${
                   scrolled ? 'text-cream/90' : 'text-cream drop-shadow'
                 }`}
               >

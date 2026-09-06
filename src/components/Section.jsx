@@ -58,7 +58,7 @@ export default function Section({
               {heading}
             </h2>
             <HeadingOrnament
-              className={`mx-auto mt-4 h-6 w-40 ${
+              className={`heading-ornament mx-auto mt-4 h-6 w-40 ${
                 floral ? "text-cream/70" : "text-clay/75"
               }`}
             />

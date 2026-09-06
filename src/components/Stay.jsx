@@ -79,7 +79,7 @@ export default function Stay() {
 
       <ul
         ref={railRef}
-        className="stay-rail -mx-6 flex snap-x snap-mandatory list-none gap-6 overflow-x-auto scroll-px-6 px-6 pb-6"
+        className="stay-rail stagger -mx-6 flex snap-x snap-mandatory list-none gap-6 overflow-x-auto scroll-px-6 px-6 pb-6"
         aria-label="Places to stay near the venue, nearest first"
       >
         {options.map((option, i) => (
@@ -88,7 +88,7 @@ export default function Stay() {
             href={option.link}
             target="_blank"
             rel="noreferrer"
-            className="group flex h-full flex-col rounded-2xl border border-phthalo/60 bg-phthalo/40 p-7 shadow-lg backdrop-blur-sm transition-colors hover:border-leaf/70 hover:bg-phthalo/60 focus-visible:ring-2 focus-visible:ring-cream/70"
+            className="group flex h-full flex-col rounded-2xl border border-phthalo/60 bg-phthalo/40 p-7 shadow-lg backdrop-blur-sm transition-[transform,box-shadow,border-color,background-color] duration-300 hover:-translate-y-1 hover:border-leaf/70 hover:shadow-2xl hover:bg-phthalo/60 focus-visible:ring-2 focus-visible:ring-cream/70"
           >
             <div className="flex items-start justify-between gap-3">
               <h3 className="font-serif text-2xl leading-tight text-blush">

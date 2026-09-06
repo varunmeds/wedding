@@ -32,8 +32,17 @@ section[id] {
   }
 
   .reveal,
-  .reveal.is-visible {
+  .reveal.is-visible,
+  .is-visible .stagger > *,
+  .hero-in > *,
+  .heading-ornament,
+  .digit-in {
     opacity: 1;
+    transform: none;
+    animation: none;
+  }
+
+  .hero-bg {
     animation: none;
   }
 }
@@ -64,6 +73,89 @@ body {
 
 .reveal.is-visible {
   animation: fade-up 0.9s ease forwards;
+}
+
+/* Children of a `.stagger` container inside a revealed section rise in one
+   after another instead of all at once. */
+.stagger > * {
+  opacity: 0;
+}
+
+.is-visible .stagger > * {
+  animation: fade-up 0.8s ease forwards;
+}
+
+.is-visible .stagger > :nth-child(1) { animation-delay: 0.1s; }
+.is-visible .stagger > :nth-child(2) { animation-delay: 0.22s; }
+.is-visible .stagger > :nth-child(3) { animation-delay: 0.34s; }
+.is-visible .stagger > :nth-child(4) { animation-delay: 0.46s; }
+.is-visible .stagger > :nth-child(5) { animation-delay: 0.58s; }
+.is-visible .stagger > :nth-child(6) { animation-delay: 0.7s; }
+.is-visible .stagger > :nth-child(n + 7) { animation-delay: 0.82s; }
+
+/* The ornament under each heading unfurls from its centre. */
+@keyframes ornament-in {
+  from {
+    opacity: 0;
+    transform: scaleX(0.2);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.heading-ornament {
+  opacity: 0;
+  transform-origin: center;
+}
+
+.is-visible .heading-ornament,
+.hero-in .heading-ornament {
+  animation: ornament-in 1.1s cubic-bezier(0.2, 0.7, 0.2, 1) 0.3s forwards;
+}
+
+/* Hero: content rises in on load, staggered; the photo drifts very slowly. */
+.hero-in > * {
+  opacity: 0;
+  animation: fade-up 1s ease forwards;
+}
+
+.hero-in > :nth-child(1) { animation-delay: 0.2s; }
+.hero-in > :nth-child(2) { animation-delay: 0.7s; }
+.hero-in > :nth-child(3) { animation-delay: 0.9s; }
+.hero-in > :nth-child(4) { animation-delay: 1.1s; }
+.hero-in > :nth-child(5) { animation-delay: 1.25s; }
+
+@keyframes hero-drift {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+.hero-bg {
+  animation: hero-drift 28s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+/* Countdown digits slide up as they change. */
+@keyframes digit-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.35em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.digit-in {
+  display: inline-block;
+  animation: digit-in 0.45s ease-out;
 }
 
 /* Slim scrollbar for the "Where to Stay" card rail; the default one is

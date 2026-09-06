@@ -82,7 +82,7 @@ export default function Ceremonies() {
           Women), so each part lines up and takes the same height across
           the whole row. */}
       <div
-        className="flex flex-col gap-8 lg:grid lg:grid-cols-[repeat(var(--cols),minmax(0,1fr))] lg:gap-x-8 lg:gap-y-6"
+        className="stagger flex flex-col gap-8 lg:grid lg:grid-cols-[repeat(var(--cols),minmax(0,1fr))] lg:gap-x-8 lg:gap-y-6"
         style={{ "--cols": columns }}
       >
         {placed.map(({ day, events, startColumn }, d) => (
@@ -111,7 +111,7 @@ export default function Ceremonies() {
             {events.map(({ event, index: i }, j) => (
               <article
                 key={i}
-                className="flex flex-col gap-6 rounded-2xl border border-cream/15 bg-ink/40 p-8 shadow-lg backdrop-blur-sm sm:grid sm:grid-cols-[10rem_1fr] sm:gap-x-8 sm:gap-y-5 sm:p-10 lg:grid-cols-1 lg:grid-rows-subgrid lg:p-7"
+                className="flex flex-col gap-6 rounded-2xl border border-cream/15 bg-ink/40 p-8 shadow-lg backdrop-blur-sm transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-cream/30 hover:shadow-2xl sm:grid sm:grid-cols-[10rem_1fr] sm:gap-x-8 sm:gap-y-5 sm:p-10 lg:grid-cols-1 lg:grid-rows-subgrid lg:p-7"
                 style={{
                   gridColumn: startColumn + j,
                   gridRow: "2 / span 5",
