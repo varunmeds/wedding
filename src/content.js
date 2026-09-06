@@ -66,7 +66,7 @@ export const ceremonies = {
       intro:
         'The water ceremony, which closes the celebrations. After lunch the bride draws water from the well and carries it back to the hall, while the groom’s family playfully blocks her way, dancing to the music. The music and dancing carry on well into the evening, and the drinks flow. You are warmly welcome to stay, dance and have a good time with us.',
       attire: {
-        men: 'Anything goes: suits, business casual (blazers, chinos) or Indian wear (kurtas)',
+        men: 'Suits, business casual (blazers, chinos) or Indian wear (kurtas)',
         women: 'Indo-western, evening wear or Indian wear, on the more casual side (dresses, salwar suits)',
       },
     },
