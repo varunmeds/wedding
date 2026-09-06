@@ -23,7 +23,7 @@ export const couple = {
 export const ceremonies = {
   heading: 'The Ceremonies',
   intro:
-    'Ours is a Kodava wedding: there is no priest. Prayers are offered to our ancestors at the sacred lamp, and the ceremonies are guided by the elders of our families, whose blessings we seek. Here is what happens over the two days, and where you come in.',
+    'Ours is a Kodava wedding: a celebration led by the elders of our families, steeped in the traditions of Coorg. We would be honoured to have you with us for each of the three ceremonies.',
   // Each card shows `intro`, then `steps` in order, then the `attire` box.
   // Custom names are given in plain English; the card title links to a
   // fuller Kodagu heritage write-up for the curious.
