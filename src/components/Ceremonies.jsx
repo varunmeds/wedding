@@ -38,14 +38,22 @@ function AttireNote({ attire }) {
     <div className="h-full rounded-xl border border-phthalo/40 bg-phthalo/35 p-4 lg:row-span-3 lg:grid lg:grid-rows-subgrid lg:gap-y-3">
       <p className="mb-2 text-xs uppercase tracking-[0.2em] text-clay lg:mb-0">
         What to wear
+        {attire.dressCode && (
+          <>
+            <span className="mx-2 text-cream/40" aria-hidden="true">
+              ·
+            </span>
+            <span className="text-blush">{attire.dressCode}</span>
+          </>
+        )}
       </p>
       {rows ? (
         rows.map(([who, text]) => (
-          <div key={who} className="mt-3 first:mt-0 lg:mt-0">
-            <p className="text-sm uppercase tracking-widest text-blush/90">
+          <div key={who} className="mt-2 flex items-baseline gap-4 first:mt-0 lg:mt-0">
+            <p className="w-16 shrink-0 text-sm uppercase tracking-widest text-cream/60">
               {who}
             </p>
-            <p className="mt-0.5 leading-relaxed text-cream/90">{text}</p>
+            <p className="leading-relaxed text-cream/90">{text}</p>
           </div>
         ))
       ) : (
