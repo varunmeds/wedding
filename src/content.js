@@ -36,8 +36,8 @@ export const ceremonies = {
       time: '', // e.g. '6:00 pm'; hidden while empty
       image: '/illustrations/oorkuduva.png',
       intro: [
-        'Oorkuduva literally means the day the village comes together. Traditionally, relatives, neighbours and well-wishers gathered to help set up the wedding, and it is still the evening that opens the celebrations. It begins with a simple prayer to the goddess Kaveri and Lord Iguthappa as the traditional oil lamp is lit. There is no priest: the evening is guided by the elders of both families, and each of us takes our parents’ blessings at the lamp.',
-        'The evening symbolises community, because a wedding in Coorg is made by many hands, not just two. Once the blessings are done it turns into a party, with music and dancing, and everyone is welcome to join in. Come ready to eat a hearty Kodava dinner, dance and celebrate with us.',
+        'Oorkuduva means the coming together of the village. In Kodava tradition a wedding is not made by a priest but by the community: relatives, neighbours and well-wishers gather the evening before to prepare for it, and their presence is itself the first blessing. The evening opens with the lighting of the sacred oil lamp and a prayer to the goddess Kaveri and Lord Iguthappa, the deities of Coorg. Each of us is then led to the lamp to receive our parents’ blessings, bowing three times at their feet.',
+        'The lamp stands for our ancestors, whose blessings matter to us above all else, and everything that follows over the two days happens in its light. It is the quietest and most personal of the ceremonies, and the one that binds the two families together before the wedding itself. The evening closes with a traditional Kodava feast and folk dances, which we hope you will join.',
       ],
       attire: {
         dressCode: 'Formal',
@@ -53,8 +53,8 @@ export const ceremonies = {
       time: '', // e.g. '6:00 pm'; hidden while empty
       image: '/illustrations/muhurtha.png',
       intro: [
-        'The wedding itself, held at the auspicious hour. The morning opens with the cutting of banana stems at the entrance: an elder from each family circles them three times and fells each with a single stroke of the sword, then dances to the music. The groom is then escorted to the stage by his best man, and the bride by her maid of honour, with lamp bearers and the band leading the way.',
-        'At the stage we offer prayers at the sacred lamp, and the elders of both families hold the formal dialogue that seals the marriage. In a Kodava wedding it is their word, not a priest’s, that makes us husband and wife. Then come the blessings: parents first, then relatives, then every guest in turn, with rice sprinkled over us and a sip of milk for prosperity. It symbolises the joining of two families as much as two people, and it is the moment we most want you there for.',
+        'The Muhurtha is the wedding, held at the auspicious hour chosen for us. It begins at the entrance with the cutting of banana stems: an elder from each family circles them three times and fells each with a single stroke of the sword, an old show of the strength and protection a family promises to the couple. The groom is then escorted to the stage by his best man, and the bride by her maid of honour, each with lamp bearers going before them.',
+        'At the stage we offer prayers at the sacred lamp, and the elders of both families hold the formal dialogue in which the bride is given and received. In a Kodava wedding it is their word, spoken before the ancestors, that makes us husband and wife. Then come the blessings, parents first, then relatives, then every guest in turn: rice sprinkled over our heads for abundance, a sip of milk for purity, and a small red bag of coins for prosperity. The marriage is sealed not by ritual but by the blessings of everyone present, which is why your being there means so much to us.',
       ],
       attire: {
         dressCode: 'Traditional',
@@ -70,8 +70,8 @@ export const ceremonies = {
       time: '', // e.g. '6:00 pm'; hidden while empty
       image: '/illustrations/ganga-pooje.png',
       intro: [
-        'Ganga Pooja, the last of the three ceremonies, closes the wedding. In the evening the groom’s mother leads the bride to the well, where she offers a short prayer and draws water. She then carries it back to the hall while the groom’s family playfully blocks her way, dancing in front of her to the music.',
-        'Water is sacred in Coorg, the land where the river Kaveri is born, and the ritual symbolises the bride being welcomed into the groom’s family, along with the patience and good humour a marriage needs. In practice it is the most relaxed part of the two days: the music and dancing carry on late into the night and the drinks flow. Stay, dance and have a good time with us.',
+        'Ganga Pooja, the last of the three ceremonies, closes the wedding. In the evening the groom’s mother leads the bride to the well, where she offers a prayer to Kaveri and draws water. She then carries it back to the hall while the groom’s family surrounds her, dancing in front of her and playfully slowing her way.',
+        'In Coorg water is life itself, for this is the land where the river Kaveri is born, and the bride carrying it into her new family is the oldest image of a Kodava marriage. The dancing that blocks her path is a test of patience and good humour, met with grace, and it symbolises her welcome into the groom’s family and the beginning of her place within it. When she reaches the hall and receives the elders’ blessings, the wedding is complete, and the celebrations carry on late into the night.',
       ],
       attire: {
         dressCode: 'Festive',
