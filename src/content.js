@@ -66,12 +66,12 @@ export const ceremonies = {
       kodavaName: 'Ganga Pooja',
       link: 'https://kodavaclan.com/kodaguheritage/mangala-padathi/#Neer_Edpo_Ganga_Pooje',
       day: 'Sunday, 20th December',
-      when: 'Afternoon',
+      when: 'Evening',
       time: '', // e.g. '6:00 pm'; hidden while empty
       image: '/illustrations/ganga-pooje.png',
       intro: [
-        'Ganga Pooja, the water ceremony, closes the wedding. After lunch the groom’s mother leads the bride to the well, where she offers a short prayer and draws water. She then carries it back to the hall while the groom’s family playfully blocks her way, dancing in front of her to the music.',
-        'Water is sacred in Coorg, the land where the river Kaveri is born, and the ritual symbolises the bride being welcomed into the groom’s family, along with the patience and good humour a marriage needs. In practice it is the most relaxed part of the two days: the music and dancing carry on well into the evening and the drinks flow. Stay, dance and have a good time with us.',
+        'Ganga Pooja, the last of the three ceremonies, closes the wedding. In the evening the groom’s mother leads the bride to the well, where she offers a short prayer and draws water. She then carries it back to the hall while the groom’s family playfully blocks her way, dancing in front of her to the music.',
+        'Water is sacred in Coorg, the land where the river Kaveri is born, and the ritual symbolises the bride being welcomed into the groom’s family, along with the patience and good humour a marriage needs. In practice it is the most relaxed part of the two days: the music and dancing carry on late into the night and the drinks flow. Stay, dance and have a good time with us.',
       ],
       attire: {
         dressCode: 'Festive',
