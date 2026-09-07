@@ -37,7 +37,7 @@ export const ceremonies = {
       image: '/illustrations/oorkuduva.png',
       intro: [
         'Oorkuduva literally means the day the village comes together. Traditionally, relatives, neighbours and well-wishers gathered to help set up the wedding, and it is still the evening that opens the celebrations. It begins with a simple prayer to the goddess Kaveri and Lord Iguthappa as the traditional oil lamp is lit. There is no priest: the evening is guided by the elders of both families, and each of us takes our parents’ blessings at the lamp.',
-        'The evening symbolises community, because a wedding in Coorg is made by many hands, not just two. Once the blessings are done it turns into a party, with the women dancing the Ummathat and the men the Kolaat, and everyone is welcome to join in. Come ready to eat a hearty Kodava dinner, dance and celebrate with us.',
+        'The evening symbolises community, because a wedding in Coorg is made by many hands, not just two. Once the blessings are done it turns into a party, with music and dancing, and everyone is welcome to join in. Come ready to eat a hearty Kodava dinner, dance and celebrate with us.',
       ],
       attire: {
         dressCode: 'Formal',
