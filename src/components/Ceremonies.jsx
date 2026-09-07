@@ -159,9 +159,15 @@ export default function Ceremonies() {
 
                 {/* What happens: a short intro, then the steps in order. */}
                 <div className="border-cream/15 sm:col-start-2 sm:row-start-1 sm:border-l sm:pl-8 lg:col-start-1 lg:row-start-2 lg:border-l-0 lg:border-t lg:pl-0 lg:pt-6">
-                  {event.intro && (
-                    <p className="leading-relaxed text-cream/90">{event.intro}</p>
-                  )}
+                  {event.intro &&
+                    [].concat(event.intro).map((para, k) => (
+                      <p
+                        key={k}
+                        className={`leading-relaxed text-cream/90 ${k > 0 ? "mt-4" : ""}`}
+                      >
+                        {para}
+                      </p>
+                    ))}
                   {event.steps?.length > 0 && (
                     <ol className="mt-5 space-y-4">
                       {event.steps.map((step, k) => (
