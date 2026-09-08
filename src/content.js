@@ -223,8 +223,7 @@ export const rsvp = {
   heading: 'RSVP',
   intro:
     'It would mean a great deal to us to know you are coming. Please let us know for how many, and which days you can join us for.',
-  // TODO: paste your form link here, e.g. 'https://forms.gle/xxxxxxxx'.
-  formUrl: '',
+  formUrl: 'https://forms.gle/2ah3TmnG68BgJ8CHA',
   buttonLabel: 'Let us know you’re coming',
   // TODO: pick a date that gives you time to confirm catering and rooms.
   deadline: 'Kindly respond by the 15th of November, 2026',
