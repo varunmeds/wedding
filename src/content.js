@@ -56,7 +56,7 @@ export const ceremonies = {
       image: '/illustrations/muhurtha.png',
       intro: [
         'The wedding itself, held at the auspicious hour chosen for us, unfolds over the morning as a sequence of rituals: Balle Udo, the bangle ceremony; Baale Kethuva, the cutting of the banana stumps; the Muhurtham at the mantap; and Batte Thadapa, the bride’s playful send-off.',
-        'It is the Sammanda Adakuva, a formal dialogue between the elders of both families, that solemnises the marriage. There is no priest: the couple are made husband and wife by the word of their elders and the blessings of everyone present.',
+        'It is the Sammanda Adakuva, a formal dialogue between the elders of both families, that solemnises the marriage. It is their word, and the blessings of everyone present, that make us husband and wife.',
       ],
       // Shown in order behind a "step by step" disclosure on the card.
       steps: [
