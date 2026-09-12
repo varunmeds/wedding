@@ -168,27 +168,41 @@ export default function Ceremonies() {
                         {para}
                       </p>
                     ))}
+                  {/* Ceremonies made of several named rituals list them in
+                      order behind a disclosure, closed by default, so the
+                      card stays in step with its neighbours on desktop. */}
                   {event.steps?.length > 0 && (
-                    <ol className="mt-5 space-y-4">
-                      {event.steps.map((step, k) => (
-                        <li key={k} className="flex gap-3">
-                          <span
-                            className="mt-0.5 shrink-0 font-serif text-lg leading-none text-clay"
-                            aria-hidden="true"
-                          >
-                            {k + 1}.
-                          </span>
-                          <div>
-                            <p className="text-sm uppercase tracking-widest text-blush/90">
-                              {step.title}
-                            </p>
-                            <p className="mt-1 leading-relaxed text-cream/85">
-                              {step.text}
-                            </p>
-                          </div>
-                        </li>
-                      ))}
-                    </ol>
+                    <details className="group mt-5">
+                      <summary className="flex cursor-pointer list-none items-center gap-3 text-sm uppercase tracking-widest text-clay transition-colors hover:text-blush [&::-webkit-details-marker]:hidden">
+                        <span
+                          className="font-serif text-xl leading-none transition-transform group-open:rotate-45"
+                          aria-hidden="true"
+                        >
+                          +
+                        </span>
+                        {event.stepsLabel || "The rituals, step by step"}
+                      </summary>
+                      <ol className="mt-5 space-y-4">
+                        {event.steps.map((step, k) => (
+                          <li key={k} className="flex gap-3">
+                            <span
+                              className="mt-0.5 shrink-0 font-serif text-lg leading-none text-clay"
+                              aria-hidden="true"
+                            >
+                              {k + 1}.
+                            </span>
+                            <div>
+                              <p className="text-sm uppercase tracking-widest text-blush/90">
+                                {step.title}
+                              </p>
+                              <p className="mt-1 leading-relaxed text-cream/85">
+                                {step.text}
+                              </p>
+                            </div>
+                          </li>
+                        ))}
+                      </ol>
+                    </details>
                   )}
                   {!event.steps?.length && event.forGuests && (
                     <p className="leading-relaxed text-cream/90">{event.forGuests}</p>

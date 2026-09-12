@@ -19,14 +19,16 @@ export const couple = {
 
 // A Kodava (Codava) wedding is conducted by the elders of the family
 // (there is no priest) and unfolds across three principal ceremonies.
-// Adjust the days, times and wording to match your own celebration.
+// Wording follows the guests' guide in Wedding.pdf at the repo root.
 export const ceremonies = {
   heading: 'The Ceremonies',
   intro:
-    'Ours is a Kodava wedding: a celebration led by the elders of our families, steeped in the traditions of Coorg. We would be honoured to have you with us for each of the three ceremonies.',
-  // Each card shows `intro` (one string or a list of paragraphs, customs
-  // named in plain English) and the `attire` box. The card title links to a
-  // fuller Kodagu heritage write-up for the curious.
+    'A Kodava wedding is a joyful celebration of our customs, traditions and community. Without priests or elaborate rituals, the union is solemnised by our elders, with prayers offered to our ancestors, whose blessings remain at the heart of the wedding. We would be honoured to have you with us for each of the three ceremonies.',
+  // Each card shows `intro` (one string or a list of paragraphs), then an
+  // optional ordered `steps` list of { title, text } behind a closed-by-default
+  // disclosure for ceremonies made of several named rituals, and the `attire`
+  // box. The card title links to a fuller
+  // Kodagu heritage write-up for the curious.
   events: [
     {
       kodavaName: 'Oorkuduva',
@@ -36,30 +38,49 @@ export const ceremonies = {
       time: '', // e.g. '6:00 pm'; hidden while empty
       image: '/illustrations/oorkuduva.png',
       intro: [
-        'Oorkuduva means the coming together of the village. In Kodava tradition a wedding is not made by a priest but by the community: relatives, neighbours and well-wishers gather the evening before to prepare for it, and their presence is itself the first blessing. The evening opens with the lighting of the sacred oil lamp and a prayer to the goddess Kaveri and Lord Iguthappa, the deities of Coorg. Each of us is then led to the lamp to receive our parents’ blessings, bowing three times at their feet.',
-        'The lamp stands for our ancestors, whose blessings matter to us above all else, and everything that follows over the two days happens in its light. It is the quietest and most personal of the ceremonies, and the one that binds the two families together before the wedding itself. The evening closes with a traditional Kodava feast and folk dances, which we hope you will join.',
+        'Oorkuduva marks the beginning of the wedding celebrations, bringing family, villagers and well-wishers together.',
+        'The evening begins by seeking the blessings of Goddess Kaveri and Lord Iguthappa, followed by the lighting of the sacred Thookbolcha, the traditional Coorg oil lamp. The bride’s mother then adorns her with the Pavala Maale, a coral chain, and the Pathak, a sacred ornament similar to the mangalsutra, symbolising marital blessings.',
       ],
       attire: {
         dressCode: 'Formal',
         men: 'Suits, Blazers',
-        women: 'Gowns, Dresses, Indo-Western',
+        women: 'Sari, Lehenga, Salwar Suit, Indo-Western',
       },
     },
     {
-      kodavaName: 'Muhurtha',
+      kodavaName: 'Dampathi Muhurtham',
       link: 'https://kodavaclan.com/kodaguheritage/mangala-padathi/#Dampathi_Muhurtha',
       day: 'Sunday, 20th December',
       when: 'Morning',
       time: '', // e.g. '6:00 pm'; hidden while empty
       image: '/illustrations/muhurtha.png',
       intro: [
-        'The Muhurtha is the wedding, held at the auspicious hour chosen for us. It begins at the entrance with the cutting of banana stems: an elder from each family circles them three times and fells each with a single stroke of the sword, an old show of the strength and protection a family promises to the couple. The groom is then escorted to the stage by his best man, and the bride by her maid of honour, each with lamp bearers going before them.',
-        'At the stage we offer prayers at the sacred lamp, and the elders of both families hold the formal dialogue in which the bride is given and received. In a Kodava wedding it is their word, spoken before the ancestors, that makes us husband and wife. Then come the blessings, parents first, then relatives, then every guest in turn: rice sprinkled over our heads for abundance, a sip of milk for purity, and a small red bag of coins for prosperity. The marriage is sealed not by ritual but by the blessings of everyone present, which is why your being there means so much to us.',
+        'The wedding itself, held at the auspicious hour chosen for us, unfolds over the morning as a sequence of rituals: Balle Udo, the bangle ceremony; Baale Kethuva, the cutting of the banana stumps; the Muhurtham at the mantap; and Batte Thadapa, the bride’s playful send-off.',
+        'It is the Sammanda Adakuva, a formal dialogue between the elders of both families, that solemnises the marriage. There is no priest: the couple are made husband and wife by the word of their elders and the blessings of everyone present.',
+      ],
+      // Shown in order behind a "step by step" disclosure on the card.
+      steps: [
+        {
+          title: 'Balle Udo',
+          text: 'The bangle ceremony marks the morning of the wedding. The bride is adorned with traditional black and red bangles while the groom receives his customary shave and nail-cutting. After the ritual bath, the couple are dressed by their families: the bride in a sari and red veil with Coorg jewellery, and the groom in a white Kupya, Chele, Peechekathi and Odikathi.',
+        },
+        {
+          title: 'Baale Kethuva',
+          text: 'The cutting of the banana stumps is a traditional Kodava ritual symbolising strength and chivalry. An elder from each family circles the odd-numbered plantain stumps three times, offers a prayer and cuts them with a single stroke of the sword, followed by a short jig to the Valaga.',
+        },
+        {
+          title: 'Muhurtham',
+          text: 'The groom is escorted to the mantap by his Bojakara (best man), two girls carrying lamps, the Valaga and close relatives, followed by the bride with her Bojakarthi (maid of honour). After prayers, the couple circle the Mukkali three times and place their right foot across it thrice, seeking the blessings of Brahma, Vishnu and Shiva, represented by its three legs. They exchange garlands, followed by the Sammanda Adakuva, a formal dialogue between the elders that solemnises the marriage. Close relatives then bless the couple and present Cheela Pana, small red pouches of gold and coins symbolising prosperity, followed by blessings from the other guests, as the couple seek their elders’ blessings by touching their feet.',
+        },
+        {
+          title: 'Batte Thadapa',
+          text: 'A playful Kodava custom in which the bride’s cousin, traditionally entitled to her hand in marriage, stops her from leaving, claiming she was promised to him. After some light-hearted bargaining, he lets her go in exchange for a gold coin and a bottle of whiskey, with the coin tied to her veil as he sends her off as his beloved sister.',
+        },
       ],
       attire: {
         dressCode: 'Traditional',
         men: 'Kurtas, Sherwanis',
-        women: 'Lehengas, Saris',
+        women: 'Sari, Lehenga',
       },
     },
     {
@@ -70,13 +91,13 @@ export const ceremonies = {
       time: '', // e.g. '6:00 pm'; hidden while empty
       image: '/illustrations/ganga-pooje.png',
       intro: [
-        'Ganga Pooja, the last of the three ceremonies, closes the wedding. In the evening the groom’s mother leads the bride to the well, where she offers a prayer to Kaveri and draws water. She then carries it back to the hall while the groom’s family surrounds her, dancing in front of her and playfully slowing her way.',
-        'In Coorg water is life itself, for this is the land where the river Kaveri is born, and the bride carrying it into her new family is the oldest image of a Kodava marriage. The dancing that blocks her path is a test of patience and good humour, met with grace, and it symbolises her welcome into the groom’s family and the beginning of her place within it. When she reaches the hall and receives the elders’ blessings, the wedding is complete, and the celebrations carry on late into the night.',
+        'The wedding celebrations end with Ganga Pooja, where the bride is led to the well by her mother-in-law.',
+        'After offering a prayer and breaking a coconut with the groom’s Peechekathi, his dagger, she carries two pots of water back to her new home, accompanied by two girls from the groom’s family. Along the way, family members playfully dance in her path, testing her patience and endurance as she begins her new life in the groom’s home.',
       ],
       attire: {
-        dressCode: 'Festive',
-        men: 'Suits, Smart Casual, Kurtas',
-        women: 'Dresses, Indo-Western, Salwar Suits',
+        dressCode: 'Semi-Formal',
+        men: 'Smart Casual, Kurtas',
+        women: 'Indo-Western, Salwar Suits, Dresses',
       },
     },
   ],
