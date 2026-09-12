@@ -92,7 +92,7 @@ export const ceremonies = {
       image: '/illustrations/ganga-pooje.png',
       intro: [
         'The wedding celebrations end with Ganga Pooja, where the bride is led to the well by her mother-in-law.',
-        'After offering a prayer and breaking a coconut with the groom’s Peechekathi, his dagger, she carries two pots of water back to her new home, accompanied by two girls from the groom’s family. Along the way, family members playfully dance in her path, testing her patience and endurance as she begins her new life in the groom’s home.',
+        'After offering a prayer and breaking a coconut with the groom’s Peechekathi, the traditional Kodava dagger, she carries two pots of water back to her new home, accompanied by two girls from the groom’s family. Along the way, family members playfully dance in her path, testing her patience and endurance as she begins her new life in the groom’s home.',
       ],
       attire: {
         dressCode: 'Semi-Formal',
