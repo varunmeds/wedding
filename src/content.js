@@ -35,7 +35,8 @@ export const ceremonies = {
       link: 'https://kodavaclan.com/kodaguheritage/mangala-padathi/#Ooor_Kuduvo',
       day: 'Saturday, 19th December',
       when: 'Evening',
-      time: '7 pm onwards, followed by dinner',
+      time: 'from 7 pm', // joins the `when` line; hidden while empty
+      note: 'Dinner to follow', // small italic line under the time; hidden while empty
       image: '/illustrations/oorkuduva.png',
       intro: [
         'Oorkuduva marks the beginning of the wedding celebrations, bringing family, neighbours and well-wishers together.',
@@ -52,7 +53,8 @@ export const ceremonies = {
       link: 'https://kodavaclan.com/kodaguheritage/mangala-padathi/#Dampathi_Muhurtha',
       day: 'Sunday, 20th December',
       when: 'Morning',
-      time: '', // e.g. '6:00 pm'; hidden while empty
+      time: '', // e.g. 'from 6 pm'; joins the `when` line; hidden while empty
+      note: '', // e.g. 'Dinner to follow'; hidden while empty
       image: '/illustrations/muhurtha.png',
       intro: [
         'The wedding itself, held at the auspicious hour chosen for us, unfolds over the morning as a sequence of rituals: Balle Udo, the bangle ceremony; Baale Kethuva, the cutting of the banana stumps; the Muhurtham at the mantap; and Batte Thadapa, the bride’s playful send-off.',
@@ -88,7 +90,8 @@ export const ceremonies = {
       link: 'https://kodavaclan.com/kodaguheritage/mangala-padathi/#Neer_Edpo_Ganga_Pooje',
       day: 'Sunday, 20th December',
       when: 'Evening',
-      time: '6 pm onwards, followed by dinner',
+      time: 'from 6 pm', // joins the `when` line; hidden while empty
+      note: 'Dinner to follow', // small italic line under the time; hidden while empty
       image: '/illustrations/ganga-pooje.png',
       intro: [
         'The wedding celebrations end with Ganga Pooja, where the bride is led to the well by her mother-in-law.',

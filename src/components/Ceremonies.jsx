@@ -149,10 +149,19 @@ export default function Ceremonies() {
                   </h4>
                   <p className="mt-3 text-base uppercase tracking-widest text-cream/85">
                     {event.when}
+                    {event.time && (
+                      <>
+                        <span aria-hidden="true" className="mx-2 text-cream/40">
+                          ·
+                        </span>
+                        <span className="sr-only">, </span>
+                        {event.time}
+                      </>
+                    )}
                   </p>
-                  {event.time && (
-                    <p className="mt-1 text-base uppercase tracking-widest text-cream/75">
-                      {event.time}
+                  {event.note && (
+                    <p className="mt-1 font-serif text-lg italic text-cream/70">
+                      {event.note}
                     </p>
                   )}
                 </div>
