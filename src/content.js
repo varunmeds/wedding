@@ -35,7 +35,7 @@ export const ceremonies = {
       link: 'https://kodavaclan.com/kodaguheritage/mangala-padathi/#Ooor_Kuduvo',
       day: 'Saturday, 19th December',
       when: 'Evening',
-      time: '', // e.g. '6:00 pm'; hidden while empty
+      time: '7 pm onwards, followed by dinner',
       image: '/illustrations/oorkuduva.png',
       intro: [
         'Oorkuduva marks the beginning of the wedding celebrations, bringing family, neighbours and well-wishers together.',
@@ -88,7 +88,7 @@ export const ceremonies = {
       link: 'https://kodavaclan.com/kodaguheritage/mangala-padathi/#Neer_Edpo_Ganga_Pooje',
       day: 'Sunday, 20th December',
       when: 'Evening',
-      time: '', // e.g. '6:00 pm'; hidden while empty
+      time: '6 pm onwards, followed by dinner',
       image: '/illustrations/ganga-pooje.png',
       intro: [
         'The wedding celebrations end with Ganga Pooja, where the bride is led to the well by her mother-in-law.',
