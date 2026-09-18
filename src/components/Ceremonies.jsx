@@ -126,7 +126,7 @@ export default function Ceremonies() {
                 }}
               >
                 {/* Marker */}
-                <div className="sm:row-span-2 sm:text-center lg:row-span-1 lg:row-start-1">
+                <div className="text-center sm:row-span-2 lg:row-span-1 lg:row-start-1">
                   <Illustration
                     src={event.image}
                     alt={`${event.kodavaName} illustration`}
